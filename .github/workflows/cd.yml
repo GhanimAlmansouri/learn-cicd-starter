@@ -17,11 +17,6 @@ jobs:
         uses: actions/setup-go@v5
         with:
           go-version: "1.22.0"
-      - name: Debug files
-        run: |
-          pwd
-          git ls-files | sed -n '1,50p'
-          ls -la
-          ls -la scripts || true
+
       - name: Build app
-        run: bash scripts/buildprod.sh
+        run: ./scripts/buildprod.sh
