@@ -24,4 +24,4 @@ jobs:
           ls -la
           ls -la scripts || true
       - name: Build app
-        run: bash /scripts/buildprod.sh
+        run: bash scripts/buildprod.sh
